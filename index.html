@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Form Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Feedback Dashboard</h1>
+
+    <form id="feedback-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+
+      <div class="rating">
+        <label>Rating:</label>
+        <select id="rating">
+          <option value="😄">😄</option>
+          <option value="😊">😊</option>
+          <option value="😐">😐</option>
+          <option value="😟">😟</option>
+          <option value="😢">😢</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Submitted Feedback</h2>
+    <div id="feedback-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
